@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+- when you init a new repo u create a empty repo with no commits
+and there are may be files that are untracked.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+- The working directory is the directory on ur pc where your files are, the staging area comes before the commit
+by gives us a way to control which files to commit at once and the repository is the place where we want to commit our files.
