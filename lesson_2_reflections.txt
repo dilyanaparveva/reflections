@@ -5,3 +5,28 @@ and there are may be files that are untracked.
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 - The working directory is the directory on ur pc where your files are, the staging area comes before the commit
 by gives us a way to control which files to commit at once and the repository is the place where we want to commit our files.
+
+!!! NB
+What two versions does each form of "git diff" compare?
+- git diff : working directory and staging area - gives the changes you have made to the working directory and haven't put in
+the staging area yet
+- git diff --staged : staging area and commit1 - gives the changes between the most recent commit and the changes in the staging area
+you haven't commited yet
+- git diff commit1 commit2 : commit1 and commit2 - gives the changes between the two most recent commits, commit1 is the most recent commit
+
+How can you use the staging area to make sure you have one commit per logical change?
+- By using the "git diff"  and "git diff --staged" commands
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+- It's helpful to use branches when we want to make a new experimental version of our project but we are not sure it's going
+to be useful or when we want to make a version of our project in a different language.
+
+How do the diagrams help you visualize the branch structure?
+- By visualizing them! :D
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+- the result is merging all the commits from two branches, we represent it in the diagram so that we can see better the parent of every commit and their chronological sequence.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+- pros: it's faster and easier
+- cons: u may need to resolve issues like which one of the version u should keep when more than one person
